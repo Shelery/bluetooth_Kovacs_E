@@ -1,0 +1,80 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-image: url(hatter.jpg);
+  background-attachment: fixed; /* Ez a feladat szempontjból nem szükséges, csupán esztétika végett tettem hozzá*/
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(172, 243, 243);
+}
+h2 {
+  color: #0067c7;
+  /* A feladat alapján "blue", de a következetes színhasználat kedvéért
+   kimásoltam a logó színkódját, és azt használtam fel */
+}
+p {
+  text-align: justify;
+  text-indent: 1rem;
+}
+span {
+  font-weight: bold;
+  color: #0067c7;
+}
+table {
+  margin: 0 auto;
+  border-collapse: collapse;
+  text-align: center;
+  border: 2px solid #0067c7;
+}
+thead:first-child,
+tr:first-child,
+tr:nth-child(2) {
+  border-bottom: 1px solid white;
+}
+thead :first-child,
+tr :first-child,
+tr :nth-child(2) {
+  border-right: 1px solid white;
+}
+
+thead {
+  color: white;
+  background-color: #0067c7;
+}
+
+td {
+  padding: 5px;
+}
+
+.kep_tarolo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.kep_tarolo img {
+  max-width: 200px;
+}
+.kep_tarolo figure {
+  display: inline-block;
+  box-shadow: 0 0 0.5rem #004f99;
+  border-radius: 5px;
+  padding: 0;
+  margin: 0.5rem;
+}
+
+.kep_tarolo figcaption {
+  padding: 1rem;
+  text-align: center;
+  font-weight: bold;
+  color: #0067c7;
+}
+footer a {
+  display: block;
+  text-align: right;
+}
